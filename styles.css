@@ -1,0 +1,130 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(241, 242, 246);
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 150px auto 50px;
+}
+.flex-data {
+    width: 500px;
+}
+.flex-container h1{
+    color: rgb(24, 120, 243);
+    font-size: 60px;
+    padding-top: 50px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.flex-container p {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.form{
+    box-shadow: 0px 3px 8px .001px gray;
+    border-radius: 8px;
+    background-color: white;
+    padding-bottom: 20px;
+    border: none;
+    width: 400px;
+}
+.flex-form{
+    display: flex;
+    flex-direction: column;
+}
+.flex-form .text, .password{
+    padding: 15px;
+    margin: 15px 15px 0 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 0px .3px gray; 
+}
+.flex-form .button {
+    margin: 15px 15px 0 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(24, 120, 243);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.flex-form .forgot-text {
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color:rgb(24, 120, 243);
+}
+.line{
+    margin: 20px 15px;
+}
+.form .button2{
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 20px 15px 20px;
+    background-color: rgb(66, 183, 42);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+.text-page {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .flex-container p {
+        font-size: 25px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .flex-container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .flex-data {
+        width: 400px;
+    }
+
+    .flex-container h1, .flex-container p{
+        text-align: center;
+        padding: 0  0 15px 0;
+    }
+    .flex-container p{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .flex-data1, .flex-data{
+        width: 320px;
+    }
+    .flex-data h1, .flex-data p {
+        width: 320px;
+    }
+    .flex-data h1{
+        font-size: 50px;
+    }
+    .flex-data p {
+        font-size: 20px;
+    }
+    .form {
+        width: 320px;
+    }
+}
